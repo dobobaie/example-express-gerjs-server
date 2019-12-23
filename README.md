@@ -7,8 +7,8 @@ Generate and expose Swagger documentation + validation input + format data outpu
 
 One instance, one middleware, one expose and models. Simple.  
 Check [`express-gerjs`](https://github.com/dobobaie/express-gerjs) instance in [index.js#L19](https://github.com/dobobaie/example-express-gerjs-server/blob/master/index.js#L19) file => Generate Swagger documentation  
-Check [`express-gerjs`](https://github.com/dobobaie/express-gerjs) middleware declaration in [server.js#L33](https://github.com/dobobaie/example-express-gerjs-server/blob/master/server.js#L33) file => Validation + Formatage input/output payload  
-Check [`express-gerjs`](https://github.com/dobobaie/express-gerjs) swagger expose in [server.js#L52](https://github.com/dobobaie/example-express-gerjs-server/blob/master/server.js#L52) file => Expose Swagger documentation  
+Check [`express-gerjs`](https://github.com/dobobaie/express-gerjs) middleware declaration in [server.js#L27](https://github.com/dobobaie/example-express-gerjs-server/blob/master/server.js#L27) file => Validation + Formatage input/output payload  
+Check [`express-gerjs`](https://github.com/dobobaie/express-gerjs) swagger expose in [server.js#L46](https://github.com/dobobaie/example-express-gerjs-server/blob/master/server.js#L46) file => Expose Swagger documentation  
 Finally check [`gerjs`](https://github.com/dobobaie/gerjs) models in [models/models.js](https://github.com/dobobaie/example-express-gerjs-server/blob/master/models/models.js) file => Joi models required   
 
 ## Note
