@@ -12,6 +12,7 @@ const requestIpMiddleware = require("./middlewares/requestIp");
 const errorsMiddleware = require("./middlewares/errors");
 const jsonContentTypeMiddleware = require("./middlewares/jsonContentType");
 const loggerMiddleware = require("./middlewares/logger");
+const queriesCopyMiddleware = require("./middlewares/queriesCopy");
 
 module.exports = ({ packageInfo, gerJs, logger }) => {
   const app = new Express();
@@ -24,6 +25,7 @@ module.exports = ({ packageInfo, gerJs, logger }) => {
   app.use(requestIpMiddleware());
   app.use(timeout(10000));
   app.use(jsonContentTypeMiddleware());
+  app.use(queriesCopyMiddleware());
   app.use(gerJs.middleware());
 
   app
