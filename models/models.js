@@ -29,7 +29,7 @@ const models = {
       Joi.array().items(
         Joi.object({
           username: Joi.string(),
-          age: Joi.number().max(20).min(70).greater(20).less(70).required(),
+          age: Joi.number().greater(20).less(70).required(),
           firstname: Joi.string().required(),
           lastname: Joi.string().required()
         }).required()
