@@ -16,7 +16,10 @@ const { name, version } = require("./package.json");
 const config = require("./app/config")(process.env);
 
 const modelsAPI = require("./models/models");
-const gerJs = require("@gerjs/express")({
+const gerjsExpressRequire = require(process.env.gerjsExpressRequire
+  ? process.env.gerjsExpressRequire
+  : "@gerjs/express");
+const gerJs = gerjsExpressRequire({
   swagger: {
     title: "Example Express GerJs Server Swagger",
     description: "In this Swagger document, you can retrieve each route available",
