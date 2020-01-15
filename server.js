@@ -39,7 +39,12 @@ module.exports = ({ packageInfo, gerJs, logger }) => {
     })
     .get("/users", (req, res, next) => {
       console.log(req.params, req.query, req.body);
-      res.send(Object.assign({}, req.params, req.query, req.body));
+      res.send([{
+        firstname: "Jean",
+        lastname: "Bernard",
+        test2: [ctx.query],
+        test: {}
+      }]);
     })
     .get("/", (req, res, next) => {
       console.log(req.params, req.query, req.body);
