@@ -42,7 +42,7 @@ module.exports = ({ packageInfo, gerJs, logger }) => {
       res.send([{
         firstname: "Jean",
         lastname: "Bernard",
-        test2: [ctx.query],
+        test2: [req.query],
         test: {}
       }]);
     })
